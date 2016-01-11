@@ -7,7 +7,7 @@ namespace ToDo
         public Tag()
         {
             Id = new Guid();
-            Name = string.Empty;
+            Name = Consts.NewTag;
         }
 
         private Guid Id { get; set; }

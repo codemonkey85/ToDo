@@ -8,7 +8,7 @@ namespace ToDo
         public Task()
         {
             Id = new Guid();
-            Title = string.Empty;
+            Title = Consts.NewTask;
             StartDate = null;
             DuetDate = null;
             Reminders = new List<Reminder>();
