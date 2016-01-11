@@ -40,14 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
     <Compile Include="Consts.cs" />
+    <Compile Include="FileIO.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Reminder.cs" />
+    <Compile Include="SmartList.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaskList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

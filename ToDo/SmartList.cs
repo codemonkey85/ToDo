@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Xml.Serialization;
 
 namespace ToDo
 {
     [Serializable]
-    public class Project
+    public class SmartList
     {
-        public Project()
+        public SmartList()
         {
             Id = Guid.NewGuid();
-            Name = Consts.NewProject;
+            Name = Consts.NewSmartList;
             Color = Consts.DefaultColor;
-            Tasks = null;
-            SubProjects = null;
+            Criteria = string.Empty;
         }
 
         [XmlElement("Id")]
@@ -26,10 +24,7 @@ namespace ToDo
         [XmlElement("Color")]
         public Color Color { get; set; }
 
-        [XmlElement("Tasks")]
-        public List<Task> Tasks { get; set; }
-
-        [XmlElement("SubProjects")]
-        public List<Project> SubProjects { get; set; }
+        [XmlElement("Criteria")]
+        public string Criteria { get; set; }
     }
 }
